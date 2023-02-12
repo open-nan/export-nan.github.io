@@ -3,11 +3,11 @@ import { Navbar } from "./navbar/index.js";
 import { Sidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://github.com/export-nan",
 
   author: {
     name: "NAN",
-    url: "https://mrhope.site",
+    url: "https://github.com/export-nan",
   },
 
   iconAssets: "iconfont",
@@ -21,6 +21,8 @@ export default hopeTheme({
   blog: {
     name: 'NAN',
     avatar: '/avatar.JPG',
+    description: "一个前端开发者",
+    intro: "/intro.html",
     roundAvatar: true,
     // medias: {
     
@@ -59,14 +61,7 @@ export default hopeTheme({
       // sidebar
       sidebar: Sidebar,
 
-      footer: "默认页脚",
-
       displayFooter: true,
-
-      blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
-      },
 
       // page meta
       metaLocales: {

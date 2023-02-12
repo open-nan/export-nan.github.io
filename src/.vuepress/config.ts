@@ -1,6 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
+type aaa = `/${string}/`
+
 export default defineUserConfig({
   base: "/",
 
