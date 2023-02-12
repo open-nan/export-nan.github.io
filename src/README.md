@@ -5,7 +5,7 @@ icon: home
 title: NAN的记事本
 # heroImage: /logo.svg
 heroText: NAN的记事本
-bgImage: /banner.webp
+bgImage: /banner.jpg
 heroFullScreen: true
 tagline: 
 
