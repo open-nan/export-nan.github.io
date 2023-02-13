@@ -55,11 +55,11 @@ star: true
 - Github pase
 - Github CD
 
-思路：博客文档部分采用 markdown 进行编写，使用 vuepress 进行静态文件编译，采用 vuepress-theme-hope 进行主题开发，借助 Github CD 进行自动化部署。
+思路：博客文档部分采用 `markdown` 进行编写，将github仓库作为我们的文章数据源，使用 `vuepress` 对文章进行静态文件编译，采用 `vuepress-theme-hope` 进行主题开发，借助 `Github CD` 进行自动化部署。
 
-为什么是markdown？ 拜托！markdown 是真的很好用好吧，我真的爱死mardown了_(:з」∠)_
+为什么是 `markdown`: 拜托！`markdown` 真的超好用的好吧，我真的爱死mardown了_(:з」∠)_
 
-采用vuepress编译为静态文件的好处: 这样我们不用考虑博客后端与API交互部分落脚，只用专注于文档编写，vuepress会帮我搞定一切，并且因为最终编译为了静态文件这便于了我们网站在SEO方面的优化，最后我们只要配置好我们的Github我们就可以很方便的对我们的博客内容进行推送
+采用`vuepress`编译为静态文件的好处: 首先我们只编写 markdown 文件并 push 到git远端上，这样保证了我们文档笔记的安全性，你也不想你写了很久的笔记因为服务器到期或者其他原因突然离你而去对吧？而且这样我们不用考虑后端交互，只专注于 `markdown` 文档编写,`vuepress`会帮我搞定一切，并且因为最终编译为静态文件这便于了我们网站在SEO方面的优化，最后我们只要配置好我们的`Github CD`我们就可以很方便的对我们的博客内容进行推送
 
 
 ## 源码地址
