@@ -4,6 +4,8 @@ date: 2023-02-14
 tag:
   - vue
   - 源码
+category:
+  - Javascript/Typescript
 ---
 
 ## 什么是响应式?

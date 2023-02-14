@@ -3,8 +3,8 @@ title: vuepress + Github CD 搭建自动化的集成的博客发布栈
 tag:
     - vuepress
     - markdown
-category:
-    - 博客维护
+# category:
+#     - 博客维护
 # 这是页面的图标
 # icon: page
 # 这是侧边栏的顺序
