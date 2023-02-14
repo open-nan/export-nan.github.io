@@ -4,19 +4,18 @@ export const Sidebar = sidebar({
   "/": [
     "",
     {
-      text: "如何使用",
-      icon: "creative",
-      prefix: "demo/",
-      link: "demo/",
+      text: "学习笔记",
+      icon: "edit",
+      prefix: "note/",
       children: "structure",
     },
     {
-      text: "文章",
-      icon: "note",
-      prefix: "posts/",
+      text: "建站日志",
+      icon: "log",
+      prefix: "site-log/",
       children: "structure",
     },
-    "intro",
-    "slides",
+    // "intro",
+    // "slides",
   ],
 });
