@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { Navbar } from "./navbar/index.js";
-import { Sidebar } from "./sidebar/index.js";
+import { Navbar } from "./navbar.js";
+import { Sidebar } from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://github.com/export-nan",
@@ -25,7 +25,7 @@ export default hopeTheme({
     intro: "/intro.html",
     roundAvatar: true,
     // medias: {
-    
+
     // },
   },
 
