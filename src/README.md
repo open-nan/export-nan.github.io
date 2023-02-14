@@ -2,12 +2,12 @@
 home: true
 layout: BlogHome
 icon: home
-title: NAN的记事本
+title: NAN的主页
 # heroImage: /logo.svg
-heroText: NAN的记事本
+heroText: NAN的主页
 bgImage: /banner.jpg
 heroFullScreen: true
-tagline: 
+tagline:
 
 # 这里可以放一些链接
 # projects:

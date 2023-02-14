@@ -3,7 +3,8 @@ title: Map 与 WeakMap
 date: 2023-02-14
 tag:
   - es6
-  - Javascript
+category:
+  - Javascript/Typescript
 ---
 # Map 与 WeakMap
 
