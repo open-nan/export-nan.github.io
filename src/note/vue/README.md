@@ -1,5 +1,8 @@
 ---
 title: vue 渐进式javasrcipt框架
+date: 2023-02-13
+tag:
+  - vue
 ---
 
 # vue 渐进式javasrcipt框架
@@ -7,11 +10,11 @@ title: vue 渐进式javasrcipt框架
 ## 学习文档
 [vue](https://cn.vuejs.org/) 官方文档: https://cn.vuejs.org/
 
-[vue core](https://github.com/vuejs/core) 源码地址: https://github.com/vuejs/core 
+[vue core](https://github.com/vuejs/core) 源码地址: https://github.com/vuejs/core
 
 ## 拓展插件
 
-[vue-router](https://router.vuejs.org/zh/) 路由管理组件 
+[vue-router](https://router.vuejs.org/zh/) 路由管理组件
 
 [vuex](https://vuex.vuejs.org/zh/) 状态管理库，
 
