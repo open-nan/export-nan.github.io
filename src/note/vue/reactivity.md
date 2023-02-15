@@ -306,8 +306,6 @@ flowchart TB
       id5[(name)]-->id6[(name 属性的副作用合集)]
     end
   end
-
-
 ```
 
 ## 使用 WeckMap 对桶结构进行改进
