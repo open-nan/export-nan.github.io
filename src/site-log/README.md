@@ -1,5 +1,5 @@
 ---
-title: vuepress + Github CD 搭建自动化的集成的博客发布栈
+title: vuepress + Github actions 搭建自动化的集成的博客发布栈
 tag:
     - vuepress
     - markdown
@@ -53,13 +53,20 @@ star: true
 - markdown
 - vuepress
 - Github pase
-- Github CD
+- Github actions
 
-思路：博客文档部分采用 `markdown` 进行编写，将github仓库作为我们的文章数据源，使用 `vuepress` 对文章进行静态文件编译，采用 `vuepress-theme-hope` 进行主题开发，借助 `Github CD` 进行自动化部署。
+思路：博客文档部分采用 `markdown` 进行编写，将github仓库作为我们的文章数据源，使用 `vuepress` 对文章进行静态文件编译，采用 `vuepress-theme-hope` 进行主题开发，借助 `Github actions` 进行自动化部署。
 
 为什么是 `markdown`？ 拜托！`markdown` 真的超好用的好吧，我真的爱死mardown了_(:з」∠)_
 
-采用`vuepress`编译为静态文件的好处: 首先我们只编写 markdown 文件并 push 到git远端上，这样保证了我们文档笔记的安全性，你也不想你写了很久的笔记因为服务器到期或者其他原因突然离你而去对吧？而且这样我们不用考虑后端交互，只专注于 `markdown` 文档编写,`vuepress`会帮我搞定一切，并且因为最终编译为静态文件这便于了我们网站在SEO方面的优化，最后我们只要配置好我们的`Github CD`我们就可以很方便的对我们的博客内容进行推送
+采用`vuepress`编译为静态文件的好处: 首先我们只编写 markdown 文件并 push 到git远端上，这样保证了我们文档笔记的安全性，你也不想你写了很久的笔记因为服务器到期或者其他原因突然离你而去对吧？而且这样我们不用考虑后端交互，只专注于 `markdown` 文档编写,`vuepress`会帮我搞定一切，并且因为最终编译为静态文件这便于了我们网站在SEO方面的优化，最后我们只要配置好我们的`Github actions`我们就可以很方便的对我们的博客内容进行推送
+
+## 站点规划
+- [ ] 基于`docker`自动发布到`阿里云`
+- [x] 基于`Github actions`自动发布到`Github page`
+- [x] 建站
+
+
 
 
 ## 源码地址
