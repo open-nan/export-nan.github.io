@@ -59,6 +59,15 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          tags: nan47/nan-blogs
+          tags: ${{ secrets.DOCKER_TAGS }}
+
+      - name: 部署到阿里云服务器
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.ALIYUN_HOST }}
+          port: ${{ secrets.ALIYUN_PORT }}
+          username: ${{ secrets.ALIYUN_USERNAME }}
+          key: ${{ secrets.ALIYUN_KEY }}
+          script: bash update_nan_blog.sh
 
 
