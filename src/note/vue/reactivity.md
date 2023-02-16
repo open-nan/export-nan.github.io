@@ -118,7 +118,7 @@ function reactive<T extends object>(data: T):T{
   })
 }
 ```
-当有新的`副作用函数`需要依赖与`reactive`时我们向`副作用函数集合`中添加这个`副作用函数`即可
+当有新的`副作用函数`需要依赖于`reactive`时我们向`副作用函数集合`中添加这个`副作用函数`即可
 ```ts
 // 定义一个副作用函数
 function effectA(){
@@ -134,7 +134,7 @@ effectSet.add(effectB)
 在这里我们通常称这种`副作用函数集合`为`副作用桶(bucket)`
 
 ## 依赖收集
-前面我们通过`副作用函数`放入到`副作用桶`中实现了对`副作用函数`的拓展，但是我们没有区分不同属性对应的`副作用函数`，这会导致不必要的性能损失
+前面我们通过`副作用函数`放入到`副作用桶`中实现了对`副作用函数`的拓展，但这里我们没有区分不同属性对应的`副作用函数`，这会导致不必要的性能损失
 
 比如:
 ``` ts
@@ -310,7 +310,7 @@ flowchart TB
 
 ## 使用 WeckMap 对桶结构进行改进
 ::: tip WeckMap 弱映射表
-  可以看成是Map的弱版本，它的key只能是一个对象具体区别可以去看[这篇文章](/note/es6/Map-WeakMap.html)
+  可以看成是Map的弱版本，它的key只能是一个对象，具体区别可以去看[这篇文章](/note/es6/Map-WeakMap.html)
 :::
 
 ```ts
@@ -368,32 +368,32 @@ function reactive<T extends object>(data: T):T{
 ```
 
 ## 总结
-现在我们通过`reactive`函数创建响应式对象，并使用`registEffect`函数对副作用函数进行依赖搜集，当响应式数据发生改变时会触发`set`函数找到对应的副作用函数并执行，这实际上是一个发布订阅模式，响应式数据作为发布者，副作用函数作为订阅者
+现在我们通过`reactive`函数创建响应式对象，并使用`registEffect`函数对副作用函数进行依赖搜集，当响应式数据发生改变时会触发`set`函数找到对应的副作用函数并执行
+这实际上是一个发布订阅模式，响应式数据作为发布者，副作用函数作为订阅者
 
 完整代码：
 ```ts
 type Effect =()=>void
-// 定义一个副作用函数集合 用来收集副作用函数
-//const effectSet = new Set<Effect>()
 
-// const effectMap = new Map<string|symbol,EffectSet>()
+// 定义一个副作用函数集合 用来收集副作用函数
 type EffectSet = Set<Effect>
 type EffectMap = Map<string|symbol,EffectSet>
 const bucket = new WeakMap<object,EffectMap>()
 
 
-// 定义一个全局变量
+// 定义一个全局变量用来存放即将被放入到桶中的副作用函数
 let activeEffect:Effect|null = null
+
 /**
- * 注册副作用函数
- * @param [function]
+ * 注册副作用函数方法
+ * @param [function] 需要被注册的副作用方法
 */
 function registEffect(effect:Effect){
   // 将 effect 存放到 activeEffect 中
   activeEffect = effect
   // 执行effect, 这时它会去获取person的name属性，这会触发代理对象的get函数
   effect()
-  // activeEffect重空，等待下一个副作用函数的执行
+  // activeEffect制空，等待下一个副作用函数
   activeEffect = null
 }
 

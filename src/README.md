@@ -2,12 +2,12 @@
 home: true
 layout: BlogHome
 icon: home
-title: NAN的主页
+title: 主页
 # heroImage: /logo.svg
-heroText: NAN的主页
+heroText: NAN的个人博客
 bgImage: /banner.jpg
 heroFullScreen: true
-tagline:
+# tagline:
 
 # 这里可以放一些链接
 # projects:
