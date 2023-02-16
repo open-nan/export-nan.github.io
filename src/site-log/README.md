@@ -62,12 +62,9 @@ star: true
 采用`vuepress`编译为静态文件的好处: 首先我们只编写 markdown 文件并 push 到git远端上，这样保证了我们文档笔记的安全性，你也不想你写了很久的笔记因为服务器到期或者其他原因突然离你而去对吧？而且这样我们不用考虑后端交互，只专注于 `markdown` 文档编写,`vuepress`会帮我搞定一切，并且因为最终编译为静态文件这便于了我们网站在SEO方面的优化，最后我们只要配置好我们的`Github actions`我们就可以很方便的对我们的博客内容进行推送
 
 ## 站点规划
-- [ ] 基于`docker`自动发布到`阿里云`
+- [x] 基于`docker`自动发布到`阿里云`
 - [x] 基于`Github actions`自动发布到`Github page`
 - [x] 建站
-
-
-
 
 ## 源码地址
 Github URl: [*https://github.com/export-nan/nan-blogs*](https://github.com/export-nan/export-nan.github.io)
